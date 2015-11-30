@@ -1,5 +1,12 @@
 # Myanmar Unicode Fonts Collection
 မြန်မာယူနီကုဒ် ဖောင့်များကို တစ်နေရာထဲတွင် ရယူနိုင်ရန် စုစည်းထားခြင်းဖြစ်ပါသည်။
+
+### Share
++ [Share on Twitter](http://twitter.com/home?status=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts)
++ [Share on Facebook](http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts&p[images][0]=&p[title]=Myanmar Unicode Fonts&p[summary]=)
++ [Share on Google Plus](https://plus.google.com/share?url=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts)
++ [Share on LinkedIn](http://www.linkedin.com/shareArticle?mini=true&url=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts&title=Myanmar Unicode Fonts &summary=&source=)
+
 ##Lists
 + BeautiUNI-2.ttf
 + BeautiUNI-6.ttf
@@ -11,9 +18,12 @@
 + Masterpiece
 + MasterpieceUniRound.ttf
 + MIUI
++ mm3_05-Jan-2011.ttf
 + mm3anonta_1
++ mm3h.ttf
 + mm3-multi-os.ttf
 + MM3
++ mm3sh.ttf
 + mmrtextb.ttf
 + mmrtext.ttf
 + Myanmar
@@ -68,27 +78,23 @@
 + PangLong_2011feb7.ttf
 + PaohDragonApp.ttf
 + Parabaik20080421.ttf
++ Parabaik_UTN11-3.ttf
 + pyidaungsu-1.2.ttf
 + pyidaungsu-1.3.ttf
 + pyidaungsu.ttf
-+ readme.md
 + Samsung
 + Shan
 + Thanlwin-Bold.ttf
 + Thanlwin-Regular.ttf
 + Tharlon-regular.ttf
 + winuniinnwa.ttf
++ winuniiw.ttf
 + yangon.ttf
 + YoeYar-One
 + YoeYar-One
 + YoeYar-One
++ yunghkio1.1.1.ttf
 + yunghkio.ttf
-
-### Share
-+ [Share on Twitter](http://twitter.com/home?status=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts)
-+ [Share on Facebook](http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts&p[images][0]=&p[title]=Myanmar Unicode Fonts&p[summary]=)
-+ [Share on Google Plus](https://plus.google.com/share?url=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts)
-+ [Share on LinkedIn](http://www.linkedin.com/shareArticle?mini=true&url=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts&title=Myanmar Unicode Fonts &summary=&source=)
 
 ### Credit
 + [1](https://app.box.com/s/303d59rj7rbqmmewcy1szssojywd6sfa)
@@ -100,3 +106,4 @@
 
 ### Myanmar Unicode Area
 [Myanmar Unicode Area](https://www.facebook.com/groups/mmUnicode/)
+[Myanmar Unicode လမ်းညွှန်](http://mmunicode.org/)
