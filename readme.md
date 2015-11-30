@@ -89,12 +89,12 @@ yunghkio.ttf
 + [Share on LinkedIn](http://www.linkedin.com/shareArticle?mini=true&url=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts&title=Myanmar Unicode Fonts &summary=&source=)
 
 ### Credit
-+(https://app.box.com/s/303d59rj7rbqmmewcy1szssojywd6sfa)
-+(https://www.mediafire.com/folder/3amsfgkvkw7dh)
-+(https://my.pcloud.com/publink/show?code=xdt#folder=14258538)
-+(https://github.com/khmertype)
-+(https://www.mediafire.com/folder/3amsfgkvkw7dh)
-+(https://app.box.com/s/718wwwoatzr1gy531o4bgqqg4g2hh8m9)
++[1](https://app.box.com/s/303d59rj7rbqmmewcy1szssojywd6sfa)
++[2](https://www.mediafire.com/folder/3amsfgkvkw7dh)
++[3](https://my.pcloud.com/publink/show?code=xdt#folder=14258538)
++[4](https://github.com/khmertype)
++[5](https://www.mediafire.com/folder/3amsfgkvkw7dh)
++[6](https://app.box.com/s/718wwwoatzr1gy531o4bgqqg4g2hh8m9)
 
 ### Myanmar Unicode Area
-https://www.facebook.com/groups/mmUnicode/
+[Myanmar Unicode Area](https://www.facebook.com/groups/mmUnicode/)
