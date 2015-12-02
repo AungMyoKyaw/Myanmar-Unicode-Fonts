@@ -2,14 +2,15 @@
 မြန်မာယူနီကုဒ် ဖောင့်များကို တစ်နေရာထဲတွင် ရယူနိုင်ရန် စုစည်းထားခြင်းဖြစ်ပါသည်။
 
 ### Share
-+ [Share on Twitter](http://twitter.com/home?status=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts)
 + [Share on Facebook](http://www.facebook.com/sharer/sharer.php?s=100&p[url]=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts&p[images][0]=&p[title]=Myanmar Unicode Fonts&p[summary]=)
++ [Share on Twitter](http://twitter.com/home?status=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts)
 + [Share on Google Plus](https://plus.google.com/share?url=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts)
 + [Share on LinkedIn](http://www.linkedin.com/shareArticle?mini=true&url=https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts&title=Myanmar Unicode Fonts &summary=&source=)
 
-##Lists
+##List
 + BeautiUNI-2.ttf
 + BeautiUNI-6.ttf
++ cherry.ttf
 + Cherry
 + Jasmine
 + Kamjing-2.ttf
@@ -26,11 +27,16 @@
 + mm3sh.ttf
 + mmrtextb.ttf
 + mmrtext.ttf
++ mon3.ttf
 + Myanmar
++ Myanmar3.ttf
++ myanmarangoun.ttf
 + MyanmarAngoun.ttf
 + myanmarcensus.ttf
++ myanmargantgaw.ttf
 + MyanmarGantgaw.ttf
 + MyanmarKhway.ttf
++ myanmarkuttar.ttf
 + MyanmarKuttar.ttf
 + MyanmarNjaun.ttf
 + MyanmarPaOhOne_2.8.ttf
@@ -43,12 +49,16 @@
 + Myanmar
 + MyanmarSabae.ttf
 + MyanmarSagar_1.10.ttf
++ myanmarsagar.ttf
 + MyanmarSansPro.ttf
++ myanmarsquarelight.ttf
 + MyanmarSquareLight.ttf
 + MyanmarSquare.ttf
 + MyanmarTaungyi_3.15.ttf
 + MyanmarTextMelano.ttf
++ myanmartext.ttf
 + MyanmarThuriya_volt.ttf
++ myanmaryinmar.ttf
 + MyanmarYinmar.ttf
 + NamKhoneUnicode.ttf
 + Namkhon
@@ -63,7 +73,9 @@
 + NotoSansMyanmarUI-Bold.ttf
 + NotoSansMyanmarUI-Regular.ttf
 + Padauk-bold.ttf
++ padauk-bookbold.ttf
 + Padauk-bookbold.ttf
++ padauk-book.ttf
 + Padauk-book.ttf
 + PadaukGhostтАЛ.ttf
 + PadaukGrandPro
@@ -87,6 +99,7 @@
 + Thanlwin-Bold.ttf
 + Thanlwin-Regular.ttf
 + Tharlon-regular.ttf
++ tharlon.ttf
 + winuniinnwa.ttf
 + winuniiw.ttf
 + yangon.ttf
@@ -95,6 +108,7 @@
 + YoeYar-One
 + yunghkio1.1.1.ttf
 + yunghkio.ttf
++ сАЮсАЫсА▓сАЪсА░сАФсАо.ttf
 
 ### Credit
 + [1](https://app.box.com/s/303d59rj7rbqmmewcy1szssojywd6sfa)
