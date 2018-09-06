@@ -1,6 +1,10 @@
-# Myanmar Unicode
+# Myanmar Unicode Fonts
 
 > Myanmar Unicode Fonts
+
+## Download
+
+[ Download ][download]
 
 ## Myanmar Unicode Fonts
 
@@ -60,14 +64,16 @@
 
 ### Credit
 
-- [1](https://app.box.com/s/303d59rj7rbqmmewcy1szssojywd6sfa)
-- [2](https://www.mediafire.com/folder/3amsfgkvkw7dh)
-- [3](https://my.pcloud.com/publink/show?code=xdt#folder=14258538)
-- [4](https://github.com/khmertype)
-- [5](https://www.mediafire.com/folder/3amsfgkvkw7dh)
-- [6](https://app.box.com/s/718wwwoatzr1gy531o4bgqqg4g2hh8m9)
+[1](https://app.box.com/s/303d59rj7rbqmmewcy1szssojywd6sfa)
+[2](https://www.mediafire.com/folder/3amsfgkvkw7dh)
+[3](https://my.pcloud.com/publink/show?code=xdt#folder=14258538)
+[4](https://github.com/khmertype)
+[5](https://www.mediafire.com/folder/3amsfgkvkw7dh)
+[6](https://app.box.com/s/718wwwoatzr1gy531o4bgqqg4g2hh8m9)
 
 ### Myanmar Unicode Area
 
 - [Myanmar Unicode Area](https://www.facebook.com/groups/mmUnicode/)
 - [Myanmar Unicode လမ်းညွှန်](http://mmunicode.org/)
+
+[download]: https://github.com/AungMyoKyaw/Myanmar-Unicode-Fonts/releases/latest
