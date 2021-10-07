@@ -2,6 +2,10 @@
 
 > Myanmar Unicode Fonts
 
+ဟိုး အရင် က ဘာ ရယ် မဟုတ်ဘူး unicode font အလှ လေးတွေကို github မှာ လာ ထား မိတာ ။ 
+ဒီ font တွေ ဟာ font ရေး တဲ့ လူ တွေ ပဲ ပိုင်ပါတယ် ။ 
+preview ကြည့် ချင်ရင် https://saturngod.github.io/myanmar-unicode-fonts/ မှာ အဆင်ပြေတယ်။ 
+
 ## Download
 
 [ Download ][download]
