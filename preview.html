@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Added Viewport Meta Tag -->
     <title>Myanmar Fonts Preview</title>
     <!-- Tailwind CSS CDN with Custom Configuration -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,19 +23,23 @@
       };
     </script>
   </head>
-  <body class="bg-darkBackground text-white p-8">
+  <body class="bg-darkBackground text-white p-4 sm:p-8">
+    <!-- Adjusted padding for responsiveness -->
     <div class="max-w-6xl mx-auto">
-      <h1 class="text-4xl font-bold mb-8 text-center text-premiumGold">
+      <h1
+        class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center text-premiumGold"
+      >
+        <!-- Responsive text size and margins -->
         Myanmar Unicode Fonts Preview
       </h1>
 
       <!-- Search Bar -->
-      <div class="mb-8">
+      <div class="mb-6 sm:mb-8">
         <input
           type="text"
           id="searchInput"
           placeholder="Search fonts..."
-          class="w-full p-4 rounded-lg border border-gray-700 bg-darkCard text-white placeholder-placeholderGray focus:outline-none focus:ring-2 focus:ring-premiumGold"
+          class="w-full p-3 sm:p-4 rounded-lg border border-gray-700 bg-darkCard text-white placeholder-placeholderGray focus:outline-none focus:ring-2 focus:ring-premiumGold"
         />
       </div>
 
@@ -284,9 +290,11 @@
         { name: "Yunghkio", path: "Yunghkio/Yunghkio.ttf" },
       ];
 
-      // Function to load fonts dynamically
+      // Function to load fonts dynamically with font-display: swap
       function loadFont(fontName, fontPath) {
-        const newFont = new FontFace(fontName, `url(${fontPath})`);
+        const newFont = new FontFace(fontName, `url(${fontPath})`, {
+          display: "swap",
+        });
         newFont
           .load()
           .then(function (loadedFont) {
@@ -313,14 +321,16 @@
 
         filteredFonts.forEach((font) => {
           const fontItem = document.createElement("div");
-          fontItem.className = "bg-darkCard p-6 rounded-lg shadow mb-6";
+          fontItem.className =
+            "bg-darkCard p-4 sm:p-6 rounded-lg shadow mb-4 sm:mb-6"; // Adjusted padding and margins
 
           const fontTitle = document.createElement("h2");
-          fontTitle.className = "text-2xl font-semibold mb-4 text-premiumGold";
+          fontTitle.className =
+            "text-xl sm:text-2xl font-semibold mb-2 sm:mb-4 text-premiumGold"; // Responsive text sizes
           fontTitle.textContent = font.name;
 
           const fontSample = document.createElement("p");
-          fontSample.className = "text-lg";
+          fontSample.className = "text-base sm:text-lg";
           fontSample.style.fontFamily = font.name;
           fontSample.textContent =
             "သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည် အာယုဝဍ္ဎနဆေးညွှန်းစာကို ဇလွန်ဈေးဘေး ဗာဒံပင်ထက် အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်။ ၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉။ The quick brown fox jumps over the lazy dog. 0123456789";
