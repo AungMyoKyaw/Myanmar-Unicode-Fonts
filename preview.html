@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Myanmar Fonts Preview</title>
+    <!-- Tailwind CSS CDN with Custom Configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Custom Tailwind CSS Configuration
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              premiumGold: "#D4AF37",
+              darkBackground: "#121212",
+              darkCard: "#1E1E1E",
+              placeholderGray: "#6B7280",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-darkBackground text-white p-8">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-4xl font-bold mb-8 text-center text-premiumGold">
+        Myanmar Unicode Fonts Preview
+      </h1>
+
+      <!-- Search Bar -->
+      <div class="mb-8">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search fonts..."
+          class="w-full p-4 rounded-lg border border-gray-700 bg-darkCard text-white placeholder-placeholderGray focus:outline-none focus:ring-2 focus:ring-premiumGold"
+        />
+      </div>
+
+      <!-- Fonts List -->
+      <div id="fontsContainer">
+        <!-- Font items will be injected here -->
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Array of font objects with name and path
+      const fontsData = [
+        // CherryUnicode
+        { name: "Cherry_Unicode", path: "CherryUnicode/Cherry_Unicode.ttf" },
+
+        // Gantgaw
+        // { name: "Gantgaw-Regular", path: "Gantgaw/Gantgaw-Regular.ttf" },
+
+        // JasmineUnicode
+        { name: "Jasmine_Unicode", path: "JasmineUnicode/Jasmine_Unicode.ttf" },
+
+        // KT_Unicode
+        { name: "KT_02", path: "KT_Unicode/KT_02.ttf" },
+        { name: "KT_03", path: "KT_Unicode/KT_03.ttf" },
+
+        // MON3_Anonta
+        { name: "MON3Anonta1", path: "MON3_Anonta/MON3Anonta1.ttf" },
+
+        // MasterpieceUniRound
+        {
+          name: "MasterpieceUniRound",
+          path: "MasterpieceUniRound/MasterpieceUniRound.ttf",
+        },
+
+        // Myanmar3
+        { name: "mm3-multi-os", path: "Myanmar3/mm3-multi-os.ttf" },
+        { name: "mm3_05-Jan-2011", path: "Myanmar3/mm3_05-Jan-2011.ttf" },
+        { name: "mm3h", path: "Myanmar3/mm3h.ttf" },
+        { name: "mm3sh", path: "Myanmar3/mm3sh.ttf" },
+
+        // Myanmar3_PaOh
+        { name: "MM3_Paoh", path: "Myanmar3_PaOh/MM3_Paoh.ttf" },
+
+        // MyanmarAngoun
+        { name: "MyanmarAngoun", path: "MyanmarAngoun/MyanmarAngoun.ttf" },
+
+        // MyanmarBlack
+        { name: "MyanmarBlack", path: "MyanmarBlack/MyanmarBlack.ttf" },
+
+        // MyanmarCensus
+        { name: "myanmarcensus", path: "MyanmarCensus/myanmarcensus.ttf" },
+
+        // MyanmarGantGaw
+        { name: "MyanmarGantGaw", path: "MyanmarGantGaw/MyanmarGantGaw.ttf" },
+
+        // MyanmarKhway
+        { name: "MyanmarKhway", path: "MyanmarKhway/MyanmarKhway.ttf" },
+
+        // MyanmarKuttar
+        { name: "MyanmarKuttar", path: "MyanmarKuttar/MyanmarKuttar.ttf" },
+
+        // MyanmarNayone
+        { name: "MyanmarNayone", path: "MyanmarNayone/MyanmarNayone.ttf" },
+
+        // MyanmarNjaun
+        { name: "MyanmarNjaun", path: "MyanmarNjaun/MyanmarNjaun.ttf" },
+
+        // MyanmarPaOhOne
+        { name: "MyanmarPaOhOne", path: "MyanmarPaOhOne/MyanmarPaOhOne.ttf" },
+
+        // MyanmarPaOhRosemary
+        { name: "MIUI Unicode", path: "MyanmarPaOhRosemary/MIUI Unicode.ttf" },
+
+        // MyanmarPauklay
+        { name: "MyanmarPauklay", path: "MyanmarPauklay/MyanmarPauklay.ttf" },
+
+        // MyanmarPhetsot
+        { name: "MyanmarPhetsot", path: "MyanmarPhetsot/MyanmarPhetsot.ttf" },
+
+        // MyanmarPixel
+        { name: "MyanmarPixel", path: "MyanmarPixel/MyanmarPixel.ttf" },
+        {
+          name: "MyanmarPixelSmooth",
+          path: "MyanmarPixel/MyanmarPixelSmooth.ttf",
+        },
+
+        // MyanmarPonenyet
+        {
+          name: "MyanmarPonenyet",
+          path: "MyanmarPonenyet/MyanmarPonenyet.ttf",
+        },
+
+        // MyanmarPunk
+        { name: "Myanmar_Punk", path: "MyanmarPunk/Myanmar_Punk.ttf" },
+
+        // MyanmarRosemarry
+        {
+          name: "Myanmar_Rosemarry",
+          path: "MyanmarRosemarry/Myanmar_Rosemarry.ttf",
+        },
+
+        // MyanmarSabae
+        { name: "MyanmarSabae", path: "MyanmarSabae/MyanmarSabae.ttf" },
+
+        // MyanmarSagar
+        { name: "MyanmarSagar", path: "MyanmarSagar/MyanmarSagar.ttf" },
+
+        // MyanmarSansPro
+        { name: "MyanmarSansPro", path: "MyanmarSansPro/MyanmarSansPro.ttf" },
+
+        // MyanmarSquare
+        { name: "MyanmarSquare", path: "MyanmarSquare/MyanmarSquare.ttf" },
+        {
+          name: "MyanmarSquareLight",
+          path: "MyanmarSquare/MyanmarSquareLight.ttf",
+        },
+
+        // MyanmarTagu
+        { name: "MyanmarTagu", path: "MyanmarTagu/MyanmarTagu.ttf" },
+
+        // MyanmarTaungyi
+        { name: "MyanmarTaungyi", path: "MyanmarTaungyi/MyanmarTaungyi.ttf" },
+
+        // MyanmarText
+        { name: "mmrtext", path: "MyanmarText/mmrtext.ttf" },
+        { name: "mmrtextb", path: "MyanmarText/mmrtextb.ttf" },
+
+        // MyanmarTextMelano
+        {
+          name: "MyanmarTextMelano",
+          path: "MyanmarTextMelano/MyanmarTextMelano.ttf",
+        },
+
+        // MyanmarThuriya
+        { name: "MyanmarThuriya", path: "MyanmarThuriya/MyanmarThuriya.ttf" },
+        {
+          name: "MyanmarThuriya_volt",
+          path: "MyanmarThuriya/MyanmarThuriya_volt.ttf",
+        },
+
+        // MyanmarYinmar
+        { name: "MyanmarYinmar", path: "MyanmarYinmar/MyanmarYinmar.ttf" },
+
+        // Namkhon
+        { name: "NK Grand", path: "Namkhon/NK Grand.ttf" },
+        { name: "NK_SSmart2", path: "Namkhon/NK_SSmart2.ttf" },
+        { name: "NK_SSmart3", path: "Namkhon/NK_SSmart3.ttf" },
+        { name: "NK_SSmart4", path: "Namkhon/NK_SSmart4.ttf" },
+        { name: "NamKhoneUnicode", path: "Namkhon/NamKhoneUnicode.ttf" },
+        { name: "Namkhon_Web_pro", path: "Namkhon/Namkhon_Web_pro.ttf" },
+
+        // NotoSansMyanmar
+        {
+          name: "NotoSansMyanmar-Bold",
+          path: "NotoSansMyanmar/NotoSansMyanmar-Bold.ttf",
+        },
+        {
+          name: "NotoSansMyanmar-Regular",
+          path: "NotoSansMyanmar/NotoSansMyanmar-Regular.ttf",
+        },
+        {
+          name: "NotoSansMyanmarUI-Bold",
+          path: "NotoSansMyanmar/NotoSansMyanmarUI-Bold.ttf",
+        },
+        {
+          name: "NotoSansMyanmarUI-Regular",
+          path: "NotoSansMyanmar/NotoSansMyanmarUI-Regular.ttf",
+        },
+        {
+          name: "Notosan Myanmar UI Bold",
+          path: "NotoSansMyanmar/Notosan Myanmar UI Bold.ttf",
+        },
+
+        // Padauk
+        { name: "Padauk-Zawgyi", path: "Padauk/Padauk-Zawgyi.ttf" },
+        { name: "Padauk-bold", path: "Padauk/Padauk-bold.ttf" },
+        { name: "Padauk", path: "Padauk/Padauk.ttf" },
+        { name: "padauk-book", path: "Padauk/padauk-book.ttf" },
+        { name: "padauk-bookbold", path: "Padauk/padauk-bookbold.ttf" },
+
+        // PadaukGhost
+        { name: "PadaukGhost", path: "PadaukGhost/PadaukGhostтАЛ.ttf" },
+
+        // PadaukGrandPro
+        {
+          name: "PadaukGrandPro v2",
+          path: "PadaukGrandPro/PadaukGrandPro v2.ttf",
+        },
+
+        // PadaukKyaungchikote
+        {
+          name: "Padauk Kyaungchikote",
+          path: "PadaukKyaungchikote/Padauk Kyaungchikote.ttf",
+        },
+
+        // PadaukSagar
+        { name: "PadaukSagar", path: "PadaukSagar/PadaukSagar.ttf" },
+
+        // PadaukSgaw
+        { name: "PadaukSgaw-Bold", path: "PadaukSgaw/PadaukSgaw-Bold.ttf" },
+        { name: "PadaukSgaw-book", path: "PadaukSgaw/PadaukSgaw-book.ttf" },
+        {
+          name: "PadaukSgaw-bookbold",
+          path: "PadaukSgaw/PadaukSgaw-bookbold.ttf",
+        },
+        { name: "PadaukSgaw", path: "PadaukSgaw/PadaukSgaw.ttf" },
+
+        // PangLong
+        { name: "PangLong_2011feb7", path: "PangLong/PangLong_2011feb7.ttf" },
+
+        // PaohDragonApp
+        { name: "PaohDragonApp", path: "PaohDragonApp/PaohDragonApp.ttf" },
+
+        // Parabaik
+        { name: "Parabaik20080421", path: "Parabaik/Parabaik20080421.ttf" },
+        { name: "Parabaik_UTN11-3", path: "Parabaik/Parabaik_UTN11-3.ttf" },
+
+        // Pyidaungsu
+        { name: "pyidaungsu-1.2", path: "Pyidaungsu/pyidaungsu-1.2.ttf" },
+        { name: "pyidaungsu-1.3", path: "Pyidaungsu/pyidaungsu-1.3.ttf" },
+        { name: "pyidaungsu", path: "Pyidaungsu/pyidaungsu.ttf" },
+
+        // SamsungMyanmar
+        { name: "Samsung Myanmar", path: "SamsungMyanmar/Samsung Myanmar.ttf" },
+
+        // ShanUnicode
+        { name: "Shan Unicode", path: "ShanUnicode/Shan Unicode.ttf" },
+
+        // Thanlwin
+        { name: "ThanLwin", path: "Thanlwin/ThanLwin.ttf" },
+
+        // Tharlon
+        { name: "TharLon", path: "Tharlon/TharLon.ttf" },
+
+        // WinUniInnwa
+        { name: "WinUniInnwa", path: "WinUniInnwa/WinUniInnwa.ttf" },
+
+        // YoeYarOne
+        { name: "YoeYar-One Bold", path: "YoeYarOne/YoeYar-One Bold.ttf" },
+        { name: "YoeYar-One Light", path: "YoeYarOne/YoeYar-One Light.ttf" },
+        {
+          name: "YoeYar-One Regular",
+          path: "YoeYarOne/YoeYar-One Regular.ttf",
+        },
+
+        // Yunghkio
+        { name: "Yunghkio", path: "Yunghkio/Yunghkio.ttf" },
+      ];
+
+      // Function to load fonts dynamically
+      function loadFont(fontName, fontPath) {
+        const newFont = new FontFace(fontName, `url(${fontPath})`);
+        newFont
+          .load()
+          .then(function (loadedFont) {
+            document.fonts.add(loadedFont);
+          })
+          .catch(function (error) {
+            console.error("Error loading font:", fontName, error);
+          });
+      }
+
+      // Load all fonts
+      fontsData.forEach((font) => {
+        loadFont(font.name, font.path);
+      });
+
+      // Function to display fonts
+      function displayFonts(filter = "") {
+        const container = document.getElementById("fontsContainer");
+        container.innerHTML = "";
+
+        const filteredFonts = fontsData.filter((font) =>
+          font.name.toLowerCase().includes(filter.toLowerCase()),
+        );
+
+        filteredFonts.forEach((font) => {
+          const fontItem = document.createElement("div");
+          fontItem.className = "bg-darkCard p-6 rounded-lg shadow mb-6";
+
+          const fontTitle = document.createElement("h2");
+          fontTitle.className = "text-2xl font-semibold mb-4 text-premiumGold";
+          fontTitle.textContent = font.name;
+
+          const fontSample = document.createElement("p");
+          fontSample.className = "text-lg";
+          fontSample.style.fontFamily = font.name;
+          fontSample.textContent =
+            "သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည် အာယုဝဍ္ဎနဆေးညွှန်းစာကို ဇလွန်ဈေးဘေး ဗာဒံပင်ထက် အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်။ ၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉။ The quick brown fox jumps over the lazy dog. 0123456789";
+
+          fontItem.appendChild(fontTitle);
+          fontItem.appendChild(fontSample);
+          container.appendChild(fontItem);
+        });
+      }
+
+      // Initial display
+      displayFonts();
+
+      // Search functionality
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", function () {
+          const filter = this.value;
+          displayFonts(filter);
+        });
+    </script>
+  </body>
+</html>
