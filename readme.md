@@ -10,7 +10,7 @@ preview ကြည့် ချင်ရင် https://saturngod.github.io/myanma
 
 [ Download ][download]
 
-## Screenshot
+## [Screenshot](https://myanmar-unicode-fonts.pages.dev)
 
 <img src="assets/screenshot.png" alt="screenshot" width="100%">
 
