@@ -10,6 +10,10 @@ preview ကြည့် ချင်ရင် https://saturngod.github.io/myanma
 
 [ Download ][download]
 
+## Screenshot
+
+<img src="assets/screenshot.png" alt="screenshot" width="100%">
+
 ## Myanmar Unicode Fonts
 
 - [ CherryUnicode ](./CherryUnicode)
