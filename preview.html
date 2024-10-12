@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Added Viewport Meta Tag -->
     <title>Myanmar Fonts Preview</title>
-    <!-- Tailwind CSS CDN with Custom Configuration -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       // Custom Tailwind CSS Configuration
@@ -22,29 +20,38 @@
         },
       };
     </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-darkBackground text-white p-4 sm:p-8">
     <!-- Adjusted padding for responsiveness -->
     <div class="max-w-6xl mx-auto">
       <h1
-        class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center text-premiumGold"
+        class="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center text-premiumGold font-sans"
       >
         <!-- Responsive text size and margins -->
         Myanmar Unicode Fonts Preview
       </h1>
 
-      <!-- Search Bar -->
-      <div class="mb-6 sm:mb-8">
+      <!-- Search Bar with Glassmorphism Effect -->
+      <div
+        class="mb-6 sm:mb-8 backdrop-blur-md bg-opacity-50 bg-darkCard p-4 rounded-2xl"
+      >
         <input
           type="text"
           id="searchInput"
           placeholder="Search fonts..."
-          class="w-full p-3 sm:p-4 rounded-lg border border-gray-700 bg-darkCard text-white placeholder-placeholderGray focus:outline-none focus:ring-2 focus:ring-premiumGold"
+          class="w-full p-3 sm:p-4 rounded-lg border border-gray-700 bg-transparent text-white placeholder-placeholderGray focus:outline-none focus:ring-4 focus:ring-premiumGold"
         />
       </div>
 
-      <!-- Fonts List -->
-      <div id="fontsContainer">
+      <!-- Fonts List with Modern UI Elements -->
+      <div
+        id="fontsContainer"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+      >
         <!-- Font items will be injected here -->
       </div>
     </div>
@@ -322,15 +329,15 @@
         filteredFonts.forEach((font) => {
           const fontItem = document.createElement("div");
           fontItem.className =
-            "bg-darkCard p-4 sm:p-6 rounded-lg shadow mb-4 sm:mb-6"; // Adjusted padding and margins
+            "bg-darkCard p-4 sm:p-6 rounded-2xl shadow-xl mb-4 sm:mb-6 transition-transform duration-300 hover:scale-105";
 
           const fontTitle = document.createElement("h2");
           fontTitle.className =
-            "text-xl sm:text-2xl font-semibold mb-2 sm:mb-4 text-premiumGold"; // Responsive text sizes
+            "text-xl sm:text-2xl font-semibold mb-2 sm:mb-4 text-premiumGold font-sans";
           fontTitle.textContent = font.name;
 
           const fontSample = document.createElement("p");
-          fontSample.className = "text-base sm:text-lg";
+          fontSample.className = "text-base sm:text-lg font-serif";
           fontSample.style.fontFamily = font.name;
           fontSample.textContent =
             "သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည် အာယုဝဍ္ဎနဆေးညွှန်းစာကို ဇလွန်ဈေးဘေး ဗာဒံပင်ထက် အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်။ ၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉။ The quick brown fox jumps over the lazy dog. 0123456789";
