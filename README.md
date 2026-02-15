@@ -32,7 +32,7 @@
 | 🔸 [ MyanmarGantGaw ](./MyanmarGantGaw)           |
 | 🔸 [ MyanmarKhway ](./MyanmarKhway)               |
 | 🔸 [ MyanmarKuttar ](./MyanmarKuttar)             |
-| 🔸 [ MyanmarNayone ](./MyanmarKuttar)             |
+| 🔸 [ MyanmarNayone ](./MyanmarNayone)             |
 | 🔸 [ MyanmarNjaun ](./MyanmarNjaun)               |
 | 🔸 [ MyanmarPaOhOne ](./MyanmarPaOhOne)           |
 | 🔸 [ MyanmarPaOhRosemary ](./MyanmarPaOhRosemary) |

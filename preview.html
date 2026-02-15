@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Myanmar Fonts Preview</title>
+    <meta name="description" content="Preview and explore a collection of Myanmar Unicode fonts. Search and view sample text rendered in various Myanmar typefaces." />
+    <meta name="keywords" content="Myanmar, Unicode, Fonts, Myanmar Fonts, Typefaces, Myanmar Script" />
+    <meta name="author" content="Aung Myo Kyaw" />
+    <title>Myanmar Unicode Fonts Preview</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       // Custom Tailwind CSS Configuration
@@ -43,6 +46,7 @@
           type="text"
           id="searchInput"
           placeholder="Search fonts..."
+          aria-label="Search fonts"
           class="w-full p-3 sm:p-4 rounded-lg border border-gray-700 bg-transparent text-white placeholder-placeholderGray focus:outline-none focus:ring-4 focus:ring-premiumGold"
         />
       </div>
@@ -337,8 +341,9 @@
           fontTitle.textContent = font.name;
 
           const fontSample = document.createElement("p");
-          fontSample.className = "text-base sm:text-lg font-serif";
+          fontSample.className = "text-base sm:text-lg";
           fontSample.style.fontFamily = font.name;
+          fontSample.lang = "my";
           fontSample.textContent =
             "သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည် အာယုဝဍ္ဎနဆေးညွှန်းစာကို ဇလွန်ဈေးဘေး ဗာဒံပင်ထက် အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်။ ၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉။ The quick brown fox jumps over the lazy dog. 0123456789";
 
